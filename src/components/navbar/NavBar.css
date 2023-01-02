@@ -1,0 +1,30 @@
+.brand {
+  color: #61dafb;
+}
+
+.navbar {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar nav {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar nav ul {
+  list-style-type: none;
+}
+
+.navbar nav ul li {
+  margin-right: 20px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  color: white;
+}
