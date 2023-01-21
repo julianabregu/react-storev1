@@ -1,19 +1,25 @@
 /*******************************************************
                     Imports
 ********************************************************/
-// Estilos
-import "./CardWidget.css";
+//Modules
+
+//Styles
+import './CardWidget.css';
+
+//Components
+
+//Core
 
 /*******************************************************
                     Logic
 ********************************************************/
-const CardWidget = (props) => {
-  return (
-    <a href="/cart" className="cart">
-      {props.quantity}
-      <i className="material-icons">shopping_cart</i>
-    </a>
-  );
+const CardWidget = props => {
+	return (
+		<div className='cart-box'>
+			<span className='material-icons'>shopping_cart</span>
+			<p>{props.quantity}</p>
+		</div>
+	);
 };
 
 /*******************************************************

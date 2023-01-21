@@ -1,0 +1,25 @@
+.item-box {
+	background-color: lightgray;
+	margin: 2rem;
+	border-radius: 5px;
+}
+
+.item-category {
+	text-transform: uppercase;
+	border: 1px solid grey;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-left: 5px;
+}
+
+.item-title {
+	padding-left: 5px;
+}
+
+.item-description {
+	padding-left: 5px;
+}
+
+.item-price {
+	padding-left: 5px;
+}

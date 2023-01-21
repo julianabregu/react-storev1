@@ -1,30 +1,43 @@
 /*******************************************************
                     Imports
 ********************************************************/
-// Estilos
-import "./NavBar.css";
-import CardWidget from "../cardWidget/CardWidget";
+//Modules
+import { Link } from 'react-router-dom';
+//Styles
+import './NavBar.css';
+
+//Components
+import CardWidget from '../cardWidget/CardWidget';
+
+//Core
 
 /*******************************************************
                     Logic
 ********************************************************/
 const NavBar = () => {
-  return (
-    <header className="navbar">
-      <h1 className="brand">TechStore</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="/home">Inicio</a>
-            <a href="/products">Productos</a>
-            <a href="/about">Nosotros</a>
-            <a href="/contact">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <CardWidget quantity="10" />
-    </header>
-  );
+	return (
+		<header className='header'>
+			<a href='#a' className='logo'>
+				TechStore
+			</a>
+			<ul className='menu'>
+				<li>
+					<Link to='/'>Home</Link>
+				</li>
+				<li>
+					<Link to='/productos'>Productos</Link>
+				</li>
+				<li>
+					<Link to='/nosotros'>Nosotros</Link>
+				</li>
+				<li>
+					<a href='#a'>
+						<CardWidget quantity='10' />
+					</a>
+				</li>
+			</ul>
+		</header>
+	);
 };
 
 /*******************************************************

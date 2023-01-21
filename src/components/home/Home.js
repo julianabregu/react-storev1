@@ -4,7 +4,7 @@
 //Modules
 
 //Styles
-import './Footer.css';
+import './Home.css';
 
 //Components
 
@@ -13,11 +13,11 @@ import './Footer.css';
 /*******************************************************
                     Logic
 ********************************************************/
-const Footer = () => {
-	return <p>Este es el footer</p>;
+const Home = () => {
+	return <p>Estamos en la Home</p>;
 };
 
 /*******************************************************
                     Exports
 ********************************************************/
-export default Footer;
+export default Home;
