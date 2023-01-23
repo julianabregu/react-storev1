@@ -1,45 +1,58 @@
-.header {
-	background-color: #282c34;
+.nav {
+	background-color: #fff;
+	padding: 2rem;
+}
+
+.nav-logo {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
+	justify-content: center;
 }
 
 .logo {
-	font-size: 30px;
-	font-weight: 700;
-	text-decoration: none;
-	color: white;
+	width: 125px;
 	padding: 0 1rem;
 }
 
-.menu {
-	display: flex;
-	align-items: center;
+ul {
+	list-style: none;
+	background: #fff;
 }
 
-.menu li {
-	list-style-type: none;
-	padding: 0 1rem;
-}
-
-.menu li a {
-	text-decoration: none;
-	color: white;
-}
-
-.cart-box {
+ul li {
+	display: inline-block;
 	position: relative;
 }
 
-.cart-box p {
-	background-color: red;
-	font-size: 13px;
-	font-weight: 700;
-	padding: 1px 3px;
-	border-radius: 5px;
+ul li a {
+	display: block;
+	padding: 20px 25px;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+}
+
+ul li ul.dropdown li {
+	display: block;
+}
+
+ul li ul.dropdown {
+	width: 100%;
 	position: absolute;
-	top: -30px;
-	right: 2px;
+	z-index: 999;
+	display: none;
+}
+
+ul li a:hover {
+	background: lightgray;
+}
+
+ul li:hover ul.dropdown {
+	display: block;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }

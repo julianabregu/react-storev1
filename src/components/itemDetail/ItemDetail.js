@@ -14,18 +14,17 @@ import ItemCount from '../itemCount/ItemCount';
                     Logic
 ********************************************************/
 const ItemDetail = props => {
-	const { title, category, description, price } = props.data;
+	const { category, image, title, description, price } = props.data;
 
 	return (
-		<article className='itemDetail-product'>
-			<div className='item-box'>
-				<p className='item-category'>{category}</p>
-				<p className='item-title'>{title}</p>
-				<p className='item-description'>{description}</p>
-				<p className='item-price'>${price}</p>
-				<ItemCount stock={10}></ItemCount>
-			</div>
-		</article>
+		<div className='item-detail-box'>
+			<p className='item-detail-category'>{category}</p>
+			<img src={image} alt={title} className='item-image'></img>
+			<p className='item-detail-title'>{title}</p>
+			<p className='item-detail-description'>{description}</p>
+			<p className='item-detail-price'>${price}</p>
+			<ItemCount stock={10}></ItemCount>
+		</div>
 	);
 };
 

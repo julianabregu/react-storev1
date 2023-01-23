@@ -12,8 +12,8 @@ import './index.css';
 
 //Components
 // import App from "./App";
-import NavBar from './components/navbar/NavBar';
-import Home from './components/home/Home';
+import Navbar from './components/navbar/Navbar';
+// import Home from './components/home/Home';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import AboutUs from './components/aboutUs/AboutUs';
@@ -29,17 +29,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<NavBar />
+			<Navbar />
 
 			<Routes>
-				<Route exact path='/' element={<Home />} />
-				<Route
-					exact
-					path='/productos'
-					element={
-						<ItemListContainer greeting='Estamos en la lista de productos' />
-					}
-				/>
+				<Route exact path='/' element={<ItemListContainer />} />
+				<Route exact path='/productos' element={<ItemListContainer />} />
 				<Route
 					exact
 					path='/producto/:productoId'

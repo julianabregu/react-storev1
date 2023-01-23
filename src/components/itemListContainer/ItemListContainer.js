@@ -19,7 +19,7 @@ const ItemListContainer = props => {
 		<div className='main-section'>
 			<p>{props.greeting}</p>
 			<div>
-				<h1>BANNER PUBLICITARIO</h1>
+				<h1>Todos los productos</h1>
 			</div>
 			<ItemList />
 		</div>

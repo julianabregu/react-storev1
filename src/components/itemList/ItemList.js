@@ -38,12 +38,7 @@ const ItemList = props => {
 			);
 	}, []);
 
-	return (
-		<div>
-			<p>Este es el Item List</p>
-			{products}
-		</div>
-	);
+	return <div className='products-list'>{products}</div>;
 };
 
 /*******************************************************
