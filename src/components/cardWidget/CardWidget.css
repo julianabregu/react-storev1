@@ -1,15 +1,15 @@
 .cart-box {
-	position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart-box p {
-	background-color: black;
-	color: white;
-	font-size: 12px;
-	font-weight: 500;
-	padding: 1px 3px;
-	border-radius: 5px;
-	position: absolute;
-	top: -17px;
-	right: 2px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+  left: 10px;
 }

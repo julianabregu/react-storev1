@@ -14,7 +14,7 @@ import './AboutUs.css';
                     Logic
 ********************************************************/
 const AboutUs = () => {
-	return <p>Estamos en el AboutUs</p>;
+  return <p>Estamos en el AboutUs</p>;
 };
 
 /*******************************************************

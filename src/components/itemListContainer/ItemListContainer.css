@@ -1,9 +1,11 @@
 .main-section {
-	background-color: white;
-	color: black;
-	padding: 2rem;
+  margin: auto;
+  max-width: 1700px;
 }
 
 h1 {
-	padding: 2rem;
+  font-size: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
 }

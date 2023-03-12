@@ -1,0 +1,69 @@
+.nav {
+  background: url('../../images/modelps.jpg');
+  background-size: cover;
+  background-position-y: 40%;
+  padding-top: 1rem;
+  min-height: 400px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 125px;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  background: none;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.dropdown a:hover {
+  color: #f26544;
+}
+
+ul li a:hover {
+  color: #f26544;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

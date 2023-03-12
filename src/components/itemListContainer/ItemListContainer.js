@@ -14,16 +14,16 @@ import ItemList from '../itemList/ItemList';
 /*******************************************************
                     Logic
 ********************************************************/
-const ItemListContainer = props => {
-	return (
-		<div className='main-section'>
-			<p>{props.greeting}</p>
-			<div>
-				<h1>Todos los productos</h1>
-			</div>
-			<ItemList />
-		</div>
-	);
+const ItemListContainer = (props) => {
+  return (
+    <div className="main-section">
+      <p>{props.greeting}</p>
+      <div>
+        <h1>Todos los productos</h1>
+      </div>
+      <ItemList />
+    </div>
+  );
 };
 
 /*******************************************************

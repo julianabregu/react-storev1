@@ -1,0 +1,11 @@
+.main-section {
+  margin: auto;
+  max-width: 1700px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+}

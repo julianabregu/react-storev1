@@ -16,29 +16,18 @@ import Item from '../item/Item';
                     Logic
 ********************************************************/
 
-const ItemList = props => {
-	const [products, setProducts] = useState([]);
+const ItemList = () => {
+  const [products, setProducts] = useState([]);
 
-	//API de productos
-	// para JSON cambiar lo q esta dentro de fetch => '../../products.json'
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products')
+      .then((res) => res.json())
+      .then((json) =>
+        setProducts(json.map((products) => <Item key={products.id} id={'product' + products.id} data={products} />))
+      );
+  }, []);
 
-	useEffect(() => {
-		fetch('https://fakestoreapi.com/products')
-			.then(res => res.json())
-			.then(json =>
-				setProducts(
-					json.map(products => (
-						<Item
-							key={products.id}
-							id={'product' + products.id}
-							data={products}
-						/>
-					))
-				)
-			);
-	}, []);
-
-	return <div className='products-list'>{products}</div>;
+  return <div className="products-list">{products}</div>;
 };
 
 /*******************************************************

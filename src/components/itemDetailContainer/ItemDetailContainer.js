@@ -17,30 +17,22 @@ import ItemDetail from '../itemDetail/ItemDetail';
                     Logic
 ********************************************************/
 const ItemDetailContainer = () => {
-	const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
+  const { productId } = useParams();
 
-	const { productoId } = useParams();
+  useEffect(() => {
+    fetch(`https://fakestoreapi.com/products/${productId}`)
+      .then((res) => res.json())
+      .then((products) => setProducts(<ItemDetail key={products.id} id={'product' + products.id} data={products} />));
+  }, [productId]);
 
-	useEffect(() => {
-		fetch(`https://fakestoreapi.com/products/${productoId}`)
-			.then(res => res.json())
-			.then(products =>
-				setProducts(
-					<ItemDetail
-						key={products.id}
-						id={'product' + products.id}
-						data={products}
-					/>
-				)
-			);
-	}, [productoId]);
-
-	return (
-		<section className='itemDetail-box'>
-			<Link to='/productos'>Volver a mis productos</Link>
-			{products}
-		</section>
-	);
+  return (
+    <section className="main-section">
+      <h1>Detalles del producto</h1>
+      <Link to="/products">Volver a mis productos</Link>
+      {products}
+    </section>
+  );
 };
 
 /*******************************************************

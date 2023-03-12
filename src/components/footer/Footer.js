@@ -14,7 +14,7 @@ import './Footer.css';
                     Logic
 ********************************************************/
 const Footer = () => {
-	return <p>Este es el footer</p>;
+  return <p>Este es el footer</p>;
 };
 
 /*******************************************************

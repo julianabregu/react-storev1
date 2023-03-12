@@ -14,7 +14,7 @@ import './Home.css';
                     Logic
 ********************************************************/
 const Home = () => {
-	return <p>Estamos en la Home</p>;
+  return <p>Estamos en la Home</p>;
 };
 
 /*******************************************************

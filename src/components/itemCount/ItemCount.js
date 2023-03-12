@@ -14,37 +14,34 @@ import './ItemCount.css';
 /*******************************************************
                     Logic
 ********************************************************/
-const ItemCount = props => {
-	//props.stock = 7;
+const ItemCount = (props) => {
+  //props.stock = 7;
 
-	const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-	const addOne = () => {
-		if (count < props.stock) {
-			setCount(count + 1);
-		}
-	};
+  const addOne = () => {
+    if (count < props.stock) {
+      setCount(count + 1);
 
-	const disOne = () => {
-		if (count > 0) {
-			setCount(count - 1);
-		}
-	};
+      props.cantidades(count);
+    }
+  };
 
-	const onAdd = () => {
-		console.log(count);
-	};
+  const disOne = () => {
+    if (count > 0) {
+      setCount(count - 1);
 
-	return (
-		<div className='box-count'>
-			<button onClick={addOne}>+</button>
-			<p className='box-count-quantity'>{count}</p>
-			<button onClick={disOne}>-</button>
-			<button onClick={onAdd} className='add-button'>
-				Agregar al carrito
-			</button>
-		</div>
-	);
+      props.cantidades(count);
+    }
+  };
+
+  return (
+    <div className="box-count">
+      <button onClick={addOne}>+</button>
+      <p className="box-count-quantity">{count}</p>
+      <button onClick={disOne}>-</button>
+    </div>
+  );
 };
 
 /*******************************************************

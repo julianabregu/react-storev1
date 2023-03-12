@@ -1,12 +1,16 @@
 .box-count {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .box-count button {
-	background-color: #1f1f21;
-	border: 1px solid white;
-	color: white;
-	margin: 0px 5px;
-	padding: 5px;
+  background-color: #000;
+  border: 1px solid white;
+  color: white;
+  margin: 0px 5px;
+  padding: 2.5px 5px;
+  border: none;
+  border-radius: 5px;
 }
